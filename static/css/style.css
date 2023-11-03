@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+   --button-color: #6278FF;
+   --h1-size: 3rem;
+   --h2-size: 2rem;
+   --h3-size: 1.5rem;
+}
+
+* {
+   font-family: 'Poppins', sans-serif;
+   color: #001339;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+   font-weight: 600;
+}
+
+p {
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+a {
+   text-decoration: none;
+}
+
+button {
+   font-weight: 600;
+}
+
+body {
+   padding-top: 3%;
+   padding-right: 7%;
+   padding-left: 7%;
+   background-color: white;
+}
+
+.navbar-container {
+   width: 100%;
+   max-width: 1200px;
+   height: fit-content;
+   display: flex;
+   justify-content: space-between;
+}
+.navbar-container img {
+   height: auto;
+}
+nav {
+   width: 100%;
+   height: fit-content;
+   padding: 0.7rem 0;
+   display: flex;
+}
+nav ul {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+nav ul li {
+   font-weight: 400;
+   padding-right: 0.5rem;
+   list-style: none;
+}
+nav ul li.seleccionado a {
+   color: #455FFD;
+}
+nav ul button {
+   height: 100%;
+   padding: 0.5rem 1.5rem;
+   margin-left: 1.5rem;
+   background-color: #E2EDFF;
+   color: #455FFD;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.container-1 {
+   display: flex;
+   width: 100%;
+   height: fit-content;
+   align-items: center;
+}
+.container-left {
+   display: flex;
+   flex-direction: column;
+   width: 35%;
+   height: fit-content;
+}
+.container-left h1 {
+   font-size: var(--h1-size);
+   margin: 0;
+}
+.upper-desc {
+   font-size: 0.7rem;
+   font-weight: 600;
+}
+.lower-desc {
+   color: gray;
+}
+.interact {
+   display: flex;
+   align-items: stretch;
+   gap: 2rem;
+}
+.interact  button {
+   height: auto;
+   padding: 0rem 1rem;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   background-color: var(--button-color);
+}
+.interact img {
+   width: 7.5rem;
+   height: auto;
+}
+.container-right {
+   display: flex;
+   width: 65%;
+   height: fit-content;
+   justify-content: flex-end;
+}
+.container-right img {
+   width: 85%;
+   height: auto;
+   align-self: flex-end;
+}
