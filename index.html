@@ -12,7 +12,7 @@
 			<header>
 				<div class="navbar-container">
 					<div class="logo">
-						<button href="">
+						<button>
 							<img
 								src="./static/IMAGENES/jhostil-logo.svg"
 								alt="Jhostil Peru Logo"
@@ -43,13 +43,23 @@
 						empecemos una alianza juntos
 					</p>
 					<div class="interact">
-						<button href="">
-							<img
-								src="./static/IMAGENES/vid-btn.svg"
-								alt="Botón para ver video introductorio de la empresa"
-							/>
+						<button>
+							<a
+								href="https://www.youtube.com/watch?v=__KQZs28TnU&feature=youtu.be"
+							>
+								<img
+									src="./static/IMAGENES/vid-btn.svg"
+									alt="Botón para ver video introductorio de la empresa"
+							/></a>
 						</button>
-						<button class="contact">Contáctanos</button>
+						<button class="contact">
+							<a
+								href="https://api.whatsapp.com/send?phone=51998662297&text=Deseo%20saber%20más%20sobre%20sus%20servicios"
+								style="color: white"
+							>
+								Contáctanos
+							</a>
+						</button>
 					</div>
 				</div>
 				<div class="container-right">
@@ -99,7 +109,7 @@
 						<img src="./static/IMAGENES/ico2.svg" alt="Icono representativo" />
 					</div>
 					<div class="text">
-						<h2>Visión</h2>
+						<h2>Misión</h2>
 						<p class="lower-desc">
 							En Jhostil Perú S.A.C tenemos como misión brindarte servicios con
 							excelencia, seguridad y calidad garantizándote la puntualidad en
@@ -139,62 +149,89 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="servicios-container" id="servicios">
-			<div class="title-container">
-				<div class="title">
-					<h2>Nuestros servicios</h2>
+			<div class="card-container" id="servicios"></div>
+		</div>
+
+		<!-- <div class="form-container">
+			<p>¿Deseas cotizar algún servicio?</p>
+			<div class="inputs-container">
+				<div class="input-div">
+					<p>Partida</p>
+					<input type="text" placeholder="Escriba el recojo">
+					<img src="./static/IMAGENES/location-ico.svg" alt="Icono de lugar">
 				</div>
-				<div class="title-btn-container">
-					<button class="forward-btn">
-						<img
-							src="./static/IMAGENES/Arrow - Right.svg"
-							alt="Botón adelante"
-						/>
-					</button>
-					<button class="back-btn">
-						<img src="./static/IMAGENES/Arrow - Left.svg" alt="Botón atrás" />
-					</button>
+				<div class="input-div">
+					<p>Destino</p>
+					<input type="text" placeholder="Escriba el destino">
+					<img src="./static/IMAGENES/location-ico.svg" alt="Icono de lugar">
 				</div>
-			</div>
-			<div class="card-container">
-				<div class="serv-card">
-					<div class="serv-img">
-						<img src="./static/IMAGENES/hombre-entrega-corriendo-rapido.jpg" alt="Imagen representativa">
-					</div>
-					<div class="lower-card">
-						<div class="title">
-							<h3>Jhostil Express</h3>
-							<img src="./static/IMAGENES/stars.svg" alt="Ratings" />
-						</div>
-						<div class="price-container">
-							<h2>S/ 0.00</h2>
-							<button>
-								<img
-									src="./static/IMAGENES/discover-ico.svg"
-									alt="Icono cotizar"
-								/>
-								Cotizar
-							</button>
-						</div>
-						<div class="tipo-servicio">
-							<img
-								src="./static/IMAGENES/medal-ico.svg"
-								alt="Icono de medalla"
-							/>
-							<h3>Servicio Top</h3>
-						</div>
+				<div class="input-div">
+					<p>Tipo de servicio</p>
+					<button class="dropbtn" onclick="dropdownFunc()">Seleccione el tipo de servicio
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="droplist">
+						<a href="#">Servicio 1</a>
+						<a href="#">Servicio 2</a>
 					</div>
 				</div>
 			</div>
 		</div> -->
-		</div>
 
 		<footer>
 			<div class="footer-container">
-				<div class="foot1">
-					<h2>Nuestras redes sociales</h2>
+				<div class="footer-sec">
+					<h3>Nuestras redes sociales</h3>
 					<p>Entregando confianza, puntualidad y eficiencia en cada viaje.</p>
+					<div class="footer-icons-container">
+						<button>
+							<img src="/static/IMAGENES/face-btn.svg" alt="Facebook link" />
+						</button>
+						<button>
+							<img src="/static/IMAGENES/insta-btn.svg" alt="Instagram link" />
+						</button>
+						<button>
+							<a
+								href="https://www.youtube.com/watch?v=__KQZs28TnU&feature=youtu.be"
+								><img src="/static/IMAGENES/yt-btn.svg" alt="Youtube link"
+							/></a>
+						</button>
+						<button>
+							<a
+								href="https://api.whatsapp.com/send?phone=51998662297&text=Deseo%20saber%20más%20sobre%20sus%20servicios"
+								style="color: white"
+								><img src="/static/IMAGENES/whats-btn.svg" alt="Whatsapp link"
+							/></a>
+						</button>
+					</div>
 				</div>
+				<div class="footer-sec">
+					<h3>Nuestras sedes</h3>
+					<ul class="ex">
+						<li>Ate Vitarte</li>
+						<li>San Borja</li>
+						<li>San Isidro</li>
+					</ul>
+				</div>
+				<div class="footer-sec">
+					<h3>Políticas y privacidad</h3>
+					<ul>
+						<li>Política de privacidad</li>
+						<li>Política de datos</li>
+						<li>Política de delivery</li>
+					</ul>
+				</div>
+				<div class="footer-sec">
+					<h3>Soporte</h3>
+					<ul>
+						<li>(0800) 542 235</li>
+						<li>Ayuda o Soporte</li>
+					</ul>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="footer-copyright">
+				<p>© 2020 Jhostil Peru 2023 - Derechos reservados</p>
 			</div>
 		</footer>
 	</body>

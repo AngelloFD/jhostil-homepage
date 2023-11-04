@@ -189,23 +189,25 @@ nav ul button {
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 2%;
-}
-.card-container .card {
-	width: calc(100% / 3);
-	height: 100%;
-	border-radius: 10px;
-	box-shadow: 0px 3px 3px #46464626;
-	padding-left: 0.5rem;
-	.text p {
-		font-size: small;
-		text-align: justify;
+	.card {
+		width: calc(100% / 3);
+		height: 100%;
+		border-radius: 10px;
+		box-shadow: 0px 3px 3px #46464626;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		.text p {
+			font-size: small;
+			text-align: justify;
+		}
+		.btn {
+			display: flex;
+			width: 100%;
+			justify-content: flex-end;
+		}
 	}
-	.btn {
-		display: flex;
-		width: 100%;
-		justify-content: flex-end;
-	}
 }
+
 .expandable-btn {
 	background-color: #d9d9d9;
 	border: none;
@@ -215,7 +217,6 @@ nav ul button {
 	width: 10px;
 	height: 10px;
 }
-
 .expandable-btn.expanded {
 	background-color: var(--button-color);
 	width: 40px;
@@ -269,6 +270,59 @@ nav ul button {
 } */
 
 footer {
-	background-color: #07003B;
+	background-color: #07003b;
 	height: 100%;
+	padding-top: 3%;
+	padding-bottom: 1%;
+	padding-right: 7%;
+	padding-left: 7%;
+	.footer-container {
+		display: flex;
+		width: 100%;
+		height: fit-content;
+		justify-content: space-between;
+		gap: 10%;
+		.footer-sec {
+			width: calc(100% / 4);
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			.footer-icons-container {
+				display: flex;
+				width: 100%;
+				height: fit-content;
+				justify-content: space-evenly;
+				align-items: center;
+				gap: 0.5rem;
+			}
+		}
+	}
+	.line {
+		width: 65%;
+		height: 1px;
+		background-color: #6278ff;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer-copyright {
+		width: 100%;
+		height: fit-content;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-copyright p {
+		font-weight: 400;
+		font-size: 0.8rem;
+		color: white;
+	}
+}
+.footer-sec h3, .footer-sec p, .footer-sec li {
+	color: white;
+	margin-bottom: 1rem;
+}
+.footer-sec ul {
+	list-style: none;
 }
