@@ -234,7 +234,54 @@ nav ul button {
 			height: fit-content;
 			display: flex;
 			flex-direction: column;
+			.serv-card-price {
+				padding-top: 0.5rem;
+				display: flex;
+			}
+			.serv-card-price p {
+				font-size: larger;
+				font-weight: 600;
+				color: var(--button-color);
+			}
+			.serv-card-price button {
+				background-color: var(--button-color);
+				color: white;
+				border-radius: 5px;
+				border: none;
+				padding: 0.5rem 1rem;
+				margin-left: auto;
+			}
+			.serv-card-price button img { 
+				width: auto;
+				height: 1rem;
+				/* alinear imagen con la altura del texto del boton */
+				transform: translateY(10%);
+				margin-right: 0.5rem;
+			}
+			.serv-card-type {
+				display: flex;
+				align-items: center;
+				color: var(--button-color);
+				font-weight: 600;
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+			}
 		}
+		.serv-card-title {
+			font-weight: 600;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
+.work-container {
+	width: 100%;
+	height: fit-content;
+	.work-title-container {
+		display: flex;
 	}
 }
 
@@ -258,6 +305,7 @@ nav ul button {
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
+	padding-top: 3rem;
 	padding-bottom: 3rem;
 	.serv-title-container {
 		width: 100%;
@@ -290,6 +338,12 @@ nav ul button {
 			}
 		}
 	}
+}
+
+.todo {
+	padding-top: 2rem;
+	width: 100%;
+	height: auto;
 }
 
 /* Form */
