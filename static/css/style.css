@@ -113,6 +113,8 @@ nav ul button {
 	font-weight: 600;
 }
 .lower-desc {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	color: gray;
 }
 .interact {
@@ -154,11 +156,11 @@ nav ul button {
 }
 .fixed-container img {
 	position: absolute;
-	top: 85%;
+	top: 75vh; /* Ajusta este valor según tus necesidades */
 	left: 0;
-	width: 65%;
+	width: 55vw; /* Ajusta este valor según tus necesidades */
 	height: auto;
-}
+ }
 
 .scroll-container {
 	display: flex;
@@ -306,6 +308,7 @@ form {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	align-items: center;
+	font-weight: 400;
 }
 .dropdown img {
 	position: absolute;
