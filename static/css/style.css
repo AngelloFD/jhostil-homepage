@@ -222,6 +222,135 @@ nav ul button {
 	width: 40px;
 	border-radius: 25px;
 }
+.form-container {
+	width: 80%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	background-color: var(--button-color);
+	border-radius: 10px;
+}
+
+.form-container p,
+.form-container a {
+	color: white;
+}
+
+form {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+.form-title {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: var(--h2-size);
+}
+.inputs-container {
+	display: flex;
+	justify-content: space-between;
+}
+.input-text {
+	position: relative; /* Esto permite posicionar el icono de lugar dentro de .input-text */
+}
+
+.input-text input {
+	background-color: transparent;
+	color: white;
+	width: 100%;
+	border-radius: 5px;
+	border-color: white;
+	padding-left: 2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	align-items: center;
+}
+.input-text img {
+	position: absolute;
+	left: 8px; /* Ajusta este valor según el tamaño de tu icono */
+	top: 70%;
+	transform: translateY(-50%);
+}
+.input-text input::placeholder {
+	color: white;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	/* background-color: #f9f9f9; */
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+.dropdown button {
+	color: white;
+	background-color: transparent;
+	color: white;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid white;
+	padding: 1rem;
+	padding-right: 8rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	align-items: center;
+}
+.dropdown img {
+	position: absolute;
+	left: 90%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.dropdown-content a {
+	display: block;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+textarea {
+	background-color: transparent;
+	color: white;
+	width: 100%;
+	border-radius: 5px;
+	border-color: white;
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+	box-sizing: border-box; /* Añade esta línea */
+}
+textarea::placeholder {
+	color: white;
+}
+.text-area {
+	padding-top: 2.5rem;
+	width: 100%;
+}
+button[type="submit"] {
+	width: 40%;
+	height: fit-content;
+	padding: 0.5rem 0;
+	margin-top: 1rem;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	color: var(--button-color);
+	font-weight: 600;
+	/* alinear al medio del form */
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 /* .servicios-container {
 	width: 100%;
@@ -272,6 +401,7 @@ nav ul button {
 footer {
 	background-color: #07003b;
 	height: 100%;
+	margin-top: 3%;
 	padding-top: 3%;
 	padding-bottom: 1%;
 	padding-right: 7%;
@@ -319,7 +449,9 @@ footer {
 		color: white;
 	}
 }
-.footer-sec h3, .footer-sec p, .footer-sec li {
+.footer-sec h3,
+.footer-sec p,
+.footer-sec li {
 	color: white;
 	margin-bottom: 1rem;
 }

@@ -152,6 +152,49 @@
 			<div class="card-container" id="servicios"></div>
 		</div>
 
+		<div class="form-container">
+			<p class="form-title">¿Desea cotizar algún servicio?</p>
+			<form action="#">
+				<div class="inputs-container">
+					<div class="input-text">
+						<p>Partida</p>
+						<input type="text" placeholder="Escriba el recojo" />
+						<img src="./static/IMAGENES/location-ico.svg" alt="Icono decorativo">
+					</div>
+					<div class="input-text">
+						<p>Destino</p>
+						<input type="text" placeholder="Escriba el destino" />
+						<img src="./static/IMAGENES/location-ico.svg" alt="Icono decorativo">
+					</div>
+					<div class="input-text">
+						<p>Tipo de servicio</p>
+						<!-- dropdown -->
+						<div class="dropdown">
+							<button onclick="dropdownFunc()" class="dropbtn">
+								Seleccione el tipo de servicio
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content" id="droplist">
+								<a href="#">Servicio 1</a>
+								<a href="#">Servicio 2</a>
+							</div>
+							<img src="./static/IMAGENES/Arrow - Down 2.svg" alt="Flecha abajo">
+						</div>
+					</div>
+				</div>
+				<div class="text-area">
+					<p>Descripción</p>
+					<textarea
+						name="description"
+						id="description"
+						cols="30"
+						rows="10"
+						placeholder="Escriba una descripción y su correo para que le envie la cotización"
+					></textarea>
+				</div>
+				<button type="submit">Cotizar</button>
+			</form>
+		</div>
 		<!-- <div class="form-container">
 			<p>¿Deseas cotizar algún servicio?</p>
 			<div class="inputs-container">
