@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
 :root {
 	--button-color: #6278ff;
@@ -8,7 +9,7 @@
 }
 
 * {
-	font-family: "Poppins", sans-serif;
+	font-family: "Poppins", sans-serif !important;
 	color: #001339;
 	padding: 0;
 	margin: 0;
@@ -20,8 +21,9 @@ html {
 
 h1,
 h2,
-h3 {
-	font-weight: 600;
+h3,
+h4 {
+	font-weight: 600 !important;
 }
 
 p {
@@ -30,7 +32,7 @@ p {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 button {
@@ -41,6 +43,8 @@ button {
 }
 
 body {
+	margin: 0;
+	padding: 0;
 	background-color: white;
 }
 
@@ -51,6 +55,7 @@ body {
 	padding-left: 7%;
 }
 
+/* navbar */
 .navbar-container {
 	width: 100%;
 	max-width: 1200px;
@@ -61,114 +66,48 @@ body {
 	margin: 0 auto;
 	padding: 0;
 }
+
 .navbar-container img {
 	height: auto;
 }
-nav {
-	width: 100%;
-	height: fit-content;
-	padding: 0.7rem 0;
-	display: flex;
-}
-nav ul {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-nav ul li {
-	font-weight: 400;
-	padding-right: 0.5rem;
-	list-style: none;
-}
-nav ul li.seleccionado a {
-	color: #455ffd;
-}
-nav ul button {
-	height: 100%;
-	padding: 0.5rem 1.5rem;
-	margin-left: 1.5rem;
-	background-color: #e2edff;
-	color: #455ffd;
-	border: none;
-	border-radius: 5px;
-}
-.container-1 {
-	display: flex;
-	width: 100%;
-	height: fit-content;
-	align-items: center;
-	justify-content: space-between;
 
-}
-.container-left {
-	display: flex;
-	flex-direction: column;
-	width: 35%;
-	height: fit-content;
-}
-.container-left h1 {
-	font-size: var(--h1-size);
-	margin: 0;
-}
-.upper-desc {
-	font-size: 0.7rem;
-	font-weight: 600;
-}
-.lower-desc {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	color: gray;
-}
-.interact {
-	display: flex;
-	align-items: stretch;
-	gap: 2rem;
-}
-.interact .contact {
-	height: auto;
-	padding: 0rem 1rem;
-	border: none;
-	border-radius: 5px;
-	color: white;
-	background-color: var(--button-color);
-	box-shadow: 0px 0px 20px #6277ff5a;
-}
-.interact img {
-	width: 7.5rem;
-	height: auto;
-}
-.container-right {
-	display: flex;
-	width: fit-content;
-	height: fit-content;
-	justify-content: flex-end;
-}
-.container-right img {
-	width: 85%;
-	max-width: 900px;
-	height: auto;
-	padding: 0;
-	margin: 0;
-	align-self: flex-end;
+nav ul li a.seleccionado {
+	color: #455ffd !important;
 }
 
-.fixed-container {
-	display: flex;
-	width: fit-content;
-	height: fit-content;
-	margin: 0;
-	padding: 0;
+.btn {
+	--bs-btn-bg: #e2edffff !important;
+	color: #455ffd !important;
 }
-.fixed-container img {
-	width: 65%;
-	max-width: 1200px;
+
+/* fin navbar */
+
+#home {
+	background-color: transparent !important;
+}
+
+.outside-btns {
+	color: white !important;
+	background-color: var(--button-color) !important;
+	--bs-btn-box-shadow: 0px 0px 20px #6277ff5a !important;
+	--bs-btn-padding-y: 0rem !important;
+	--bs-btn-margin-y: 0rem !important;
+}
+
+.special-btn {
+	background-color: var(--button-color) !important;
+	color: white !important;
+}
+
+.special-btn img {
+	width: 1.5rem;
 	height: auto;
-	padding: 0;
-	margin: 0;
- }
+}
+
+.image-btn {
+	background-color: transparent !important;
+	border: none !important;
+}
 
 .scroll-container {
 	display: flex;
@@ -176,9 +115,10 @@ nav ul button {
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
 	gap: 2%;
-	-ms-overflow-style: none; /* compatible IE and Edge */
-	scrollbar-width: none; /* compatible Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
+
 .scroll-container img {
 	flex: 0 0 auto;
 	width: 18%;
@@ -186,8 +126,13 @@ nav ul button {
 	scroll-snap-align: start;
 	object-fit: scale-down;
 }
+
 .scroll-container::-webkit-scrollbar {
 	display: none;
+}
+
+.card {
+	--bs-btn-box-shadow: 0px 3px 3px #46464626 !important;
 }
 
 .card-container {
@@ -198,157 +143,25 @@ nav ul button {
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 2%;
-	/* Nosotros */
-	.card {
-		width: calc(100% / 3);
-		height: 100%;
-		border-radius: 10px;
-		box-shadow: 0px 3px 3px #46464626;
-		padding-left: 0.5rem;
-		padding-right: 0.5rem;
-		.text p {
-			font-size: small;
-			text-align: justify;
-		}
-		.btn {
-			display: flex;
-			width: 100%;
-			justify-content: flex-end;
-		}
-	}
-	/* Servicios */
-	.serv-card {
-		width: calc(100%/3);
-		height: 100%;
-		border-radius: 10px;
-		box-shadow: 0px 3px 3px rgba(98, 98, 98, 0.149);
-		padding-left: 1rem;
-		padding-right: 1rem;
-		.representative-image {
-			width: 100%;
-			height: 100%;
-			border-radius: 10px;
-		}
-		.serv-card-details-container {
-			width: 100%;
-			height: fit-content;
-			display: flex;
-			flex-direction: column;
-			.serv-card-price {
-				padding-top: 0.5rem;
-				display: flex;
-			}
-			.serv-card-price p {
-				font-size: larger;
-				font-weight: 600;
-				color: var(--button-color);
-			}
-			.serv-card-price button {
-				background-color: var(--button-color);
-				color: white;
-				border-radius: 5px;
-				border: none;
-				padding: 0.5rem 1rem;
-				margin-left: auto;
-				box-shadow: 0px 0px 20px #6277ff5a;
-			}
-			.serv-card-price button img { 
-				width: auto;
-				height: 1rem;
-				/* alinear imagen con la altura del texto del boton */
-				transform: translateY(10%);
-				margin-right: 0.5rem;
-			}
-			.serv-card-type {
-				display: flex;
-				align-items: center;
-				color: var(--button-color);
-				font-weight: 600;
-				padding-top: 0.5rem;
-				padding-bottom: 0.5rem;
-			}
-		}
-		.serv-card-title {
-			font-weight: 600;
-			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-	}
 }
 
-.work-container {
+.container-fluid {
 	width: 100%;
 	height: fit-content;
-	.work-title-container {
-		display: flex;
-	}
-	.work-title-btns {
-		display: flex;
-		align-items: center;
-		margin-left: auto;
-		justify-content: flex-end;
-		padding: 0;
-	}
-	.work-title-btns img {
-		width: 1.5rem;
-		height: auto;
-		margin-right: 1rem;
-	}
-	.work-title-btns button {
-		background-color: var(--button-color);
-		color: white;
-		box-shadow: 0px 0px 20px #6277ff5a;
-		border-radius: 5px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0.5rem 0.5rem;
-	}
-	.content-container {
-		/* width: 100%; */
-		height: 100%;
-		display: flex;
-		gap: 2%;
-		justify-content: space-between;
-		.left-side {
-			width: 45%;
-			height: fit-content;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-		.left-side img {
-			width: 100%;
-			height: auto;
-			border-radius: 10px;
-			padding-bottom: 1rem;
-		}
-		.right-side {
-			width: 50%;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			padding-left: 1rem;
-			justify-content: space-between;
-			gap: 5rem;
-			.long-card {
-				display: flex;
-				/* alinear todo al centro */
-				/* align-items: center;
-				justify-content: center; */
-			}
-			.long-card img {
-				width: 15%;
-				height: 25%;
-				margin-right: 0.5rem;
-			}
-			.text {
-				font-size: smaller;
-			}
-		}
-	}
+}
+
+.card {
+	height: calc(100% / 3);
+}
+
+.card-img-top {
+	width: 15%;
+	height: 25%;
+	margin-right: 0.5rem;
+}
+
+.card-title {
+	font-size: smaller;
 }
 
 .expandable-btn {
@@ -360,11 +173,13 @@ nav ul button {
 	width: 10px;
 	height: 10px;
 }
+
 .expandable-btn.expanded {
 	background-color: var(--button-color);
 	width: 40px;
 	border-radius: 25px;
 }
+
 /* Servicios */
 .serv-container {
 	width: 100%;
@@ -373,16 +188,19 @@ nav ul button {
 	flex-direction: column;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+
 	.serv-title-container {
 		width: 100%;
 		height: fit-content;
 		display: flex;
+
 		.serv-title-btns {
 			display: flex;
 			align-items: center;
 			margin-left: auto;
 			justify-content: flex-end;
 			padding: 0;
+
 			.next-btn {
 				border-radius: 50%;
 				background-color: var(--button-color);
@@ -393,6 +211,7 @@ nav ul button {
 				justify-content: center;
 				align-items: center;
 			}
+
 			.back-btn {
 				border-radius: 50%;
 				background-color: #e6e6e6;
@@ -413,137 +232,39 @@ nav ul button {
 }
 
 /* Form */
-.form-container {
+.container {
 	width: 80%;
-	height: fit-content;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
 	background-color: var(--button-color);
 	border-radius: 10px;
 }
-.form-container p,
-.form-container a {
-	color: white;
+
+.form-control::placeholder {
+	color: white !important;
 }
 
-form {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	padding-left: 5rem;
-	padding-right: 5rem;
-}
-.form-title {
-	width: 100%;
-	height: fit-content;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	font-size: var(--h2-size);
-}
-.inputs-container {
-	display: flex;
-	justify-content: space-between;
-}
-.input-text {
-	position: relative; /* Esto permite posicionar el icono de lugar dentro de .input-text */
+.btn-primary {
+	background-color: white !important;
+	color: var(--button-color) !important;
+	font-weight: 600 !important;
 }
 
-.input-text input {
-	background-color: transparent;
-	color: white;
-	width: 100%;
-	border-radius: 5px;
-	border-color: white;
-	padding-left: 2rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	align-items: center;
+.form-select {
+	--bs-form-select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23fff' class='bi bi-chevron-compact-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M7.646 9.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8 8.293 5.354 6.146a.5.5 0 1 0-.708.708l3 3z'/></svg>") !important;
+	background-size: auto 25px !important;
 }
-.input-text img {
-	position: absolute;
-	left: 8px; /* Ajusta este valor según el tamaño de tu icono */
-	top: 70%;
-	transform: translateY(-50%);
-}
-.input-text input::placeholder {
-	color: white;
-}
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-.dropdown-content {
-	display: none;
-	position: absolute;
-	/* background-color: #f9f9f9; */
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	padding: 12px 16px;
-	z-index: 1;
-}
-.dropdown button {
-	color: white;
-	background-color: transparent;
-	color: white;
-	width: 100%;
-	border-radius: 5px;
-	border: 1px solid white;
-	padding: 1rem;
-	padding-right: 8rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	align-items: center;
-	font-weight: 400;
-}
-.dropdown img {
-	position: absolute;
-	left: 90%;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.dropdown-content a {
-	display: block;
-}
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-textarea {
-	background-color: transparent;
-	color: white;
-	width: 100%;
-	border-radius: 5px;
-	border-color: white;
-	padding-top: 0.5rem;
-	padding-left: 1rem;
-	box-sizing: border-box; /* Añade esta línea */
-}
-textarea::placeholder {
-	color: white;
-}
-.text-area {
-	padding-top: 2.5rem;
-	width: 100%;
-}
-button[type="submit"] {
-	width: 40%;
-	height: fit-content;
-	padding: 0.5rem 0;
-	margin-top: 1rem;
-	border-radius: 5px;
-	border: none;
-	background-color: white;
-	color: var(--button-color);
-	font-weight: 600;
-	/* alinear al medio del form */
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
+/* Fin form */
 
 footer {
+	background-color: #001339 !important;
+}
+footer h3, footer p, footer li {
+	color: white !important;
+}
+.footer-container {
+	background-color: transparent !important;
+}
+
+/* footer {
 	background-color: #07003b;
 	height: 100%;
 	margin-top: 3%;
@@ -551,17 +272,20 @@ footer {
 	padding-bottom: 1%;
 	padding-right: 7%;
 	padding-left: 7%;
+
 	.footer-container {
 		display: flex;
 		width: 100%;
 		height: fit-content;
 		justify-content: space-between;
 		gap: 10%;
+
 		.footer-sec {
 			width: calc(100% / 4);
 			height: 100%;
 			display: flex;
 			flex-direction: column;
+
 			.footer-icons-container {
 				display: flex;
 				width: 100%;
@@ -572,6 +296,7 @@ footer {
 			}
 		}
 	}
+
 	.line {
 		width: 65%;
 		height: 1px;
@@ -581,6 +306,7 @@ footer {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	.footer-copyright {
 		width: 100%;
 		height: fit-content;
@@ -588,18 +314,21 @@ footer {
 		justify-content: center;
 		align-items: center;
 	}
+
 	.footer-copyright p {
 		font-weight: 400;
 		font-size: 0.8rem;
 		color: white;
 	}
 }
+
 .footer-sec h3,
 .footer-sec p,
 .footer-sec li {
 	color: white;
 	margin-bottom: 1rem;
 }
+
 .footer-sec ul {
 	list-style: none;
-}
+} */

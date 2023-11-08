@@ -1,93 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="./static/css/style.css" rel="stylesheet" type="text/css" />
-		<title>Jhostil Peru</title>
-	</head>
+<html lang="es">
 
-	<body>
-		<div class="sudo-body">
-			<header>
-				<div class="navbar-container">
-					<div class="logo">
-						<button>
-							<img
-								src="./static/IMAGENES/jhostil-logo.svg"
-								alt="Jhostil Peru Logo"
-							/>
-						</button>
-					</div>
-					<nav>
-						<ul id="nav-lista">
-							<li><a href="#home">Inicio</a></li>
-							<li><a href="#clientes">Clientes</a></li>
-							<li><a href="#nosotros">Nosotros</a></li>
-							<li><a href="#servicios">Servicios</a></li>
-							<li><a href="#">Trabaja con nosotros</a></li>
-							<li><a href="#">Contactanos</a></li>
-							<button>Ingresar</button>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="./static/css/style.css" rel="stylesheet" type="text/css" />
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+	<!-- Your JavaScript file -->
+	<script src="./static/js/script.js"></script>
+
+	<title>Jhostil Peru</title>
+</head>
+
+<body>
+	<div class="sudo-body">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<button class="navbar-brand" href="#">
+						<img src="./static/IMAGENES/jhostil-logo.svg" alt="Jhostil Peru Logo" />
+					</button>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+						aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarScroll">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#home">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#clientes">Clientes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#nosotros">Nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#servicios">Servicios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#trabajas">Trabaja con nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#">Contactanos</a>
+							</li>
 						</ul>
-					</nav>
-				</div>
-			</header>
-			<div class="container-1" id="home">
-				<div class="container-left">
-					<p class="upper-desc">
-						¡¡Un gusto verlo de nuevo, que tenga un buen día!!
-					</p>
-					<h1>"Conduciendo tu éxito juntos"</h1>
-					<p class="lower-desc">
-						Conoce un poco más de nuestra empresa en el siguiente video y
-						empecemos una alianza juntos
-					</p>
-					<div class="interact">
-						<button>
-							<a
-								href="https://www.youtube.com/watch?v=__KQZs28TnU&feature=youtu.be"
-							>
-								<img
-									src="./static/IMAGENES/vid-btn.svg"
-									alt="Botón para ver video introductorio de la empresa"
-							/></a>
-						</button>
-						<button class="contact">
-							<a
-								href="https://api.whatsapp.com/send?phone=51998662297&text=Deseo%20saber%20más%20sobre%20sus%20servicios"
-								style="color: white"
-							>
-								Contáctanos
-							</a>
-						</button>
+						<button class="btn" type="submit">Ingresar</button>
 					</div>
 				</div>
-				<div class="container-right">
-					<img src="./static/IMAGENES/image1.png" alt="Imagen representativa" />
+			</nav>
+		</header>
+
+		<div class="container d-flex justify-content-between align-items-center gap-5" id="home">
+			<div class="d-flex flex-column align-items-start justify-content-center">
+				<p class="fw-bold">
+					¡¡Un gusto verlo de nuevo, que tenga un buen día!!
+				</p>
+				<h1>"Conduciendo tu éxito juntos"</h1>
+				<p class="mt-4 mb-4">
+					Conoce un poco más de nuestra empresa en el siguiente video y
+					empecemos una alianza juntos
+				</p>
+				<div class="d-flex align-items-stretch gap-2">
+					<button class="btn image-btn">
+						<a href="https://www.youtube.com/watch?v=__KQZs28TnU&feature=youtu.be">
+							<img src="./static/IMAGENES/vid-btn.svg" alt="Botón para ver video introductorio de la empresa" />
+						</a>
+					</button>
+					<button class="btn outside-btns">
+						<a href="https://api.whatsapp.com/send?phone=51998662297&text=Deseo%20saber%20más%20sobre%20sus%20servicios"
+							style="color: white">
+							Contáctanos
+						</a>
+					</button>
 				</div>
 			</div>
-			<div class="fixed-container">
-				<img
-					src="./static/IMAGENES/decor-camion.svg"
-					alt="Imagen representativa"
-				/>
+			<div class="d-flex justify-content-end d-lg-block d-md-none d-sm-none">
+				<img src="./static/IMAGENES/image1.png" alt="Imagen representativa" class="img-fluid" />
 			</div>
-			<div class="scroll-container" id="clientes">
-				<img src="./static/IMAGENES/cl1.svg" alt="Ibero Plast logo" />
-				<img src="./static/IMAGENES/cl2.svg" alt="Industrias San Miguel logo" />
-				<img src="./static/IMAGENES/cl3.svg" alt="Placas logo" />
-				<img src="./static/IMAGENES/cl4.svg" alt="Tottus logo" />
-				<img src="./static/IMAGENES/cl5.svg" alt="Mobiliaria industrial logo" />
-				<img src="./static/IMAGENES/cl6.svg" alt="Kimberly Clark logo" />
-			</div>
-			<div class="card-container" id="nosotros">
-				<div class="card">
-					<div class="icon">
-						<img src="./static/IMAGENES/ico1.svg" alt="Icono representativo" />
+		</div>
+
+		<div class="d-flex justify-content-left d-lg-block d-md-none d-sm-none">
+			<img src="./static/IMAGENES/decor-camion.svg" alt="Imagen representativa" class="img-fluid w-50" />
+		</div>
+
+		<div class="scroll-container pb-5 pt-5" id="clientes">
+			<img src="./static/IMAGENES/cl1.svg" alt="Ibero Plast logo" />
+			<img src="./static/IMAGENES/cl2.svg" alt="Industrias San Miguel logo" />
+			<img src="./static/IMAGENES/cl3.svg" alt="Placas logo" />
+			<img src="./static/IMAGENES/cl4.svg" alt="Tottus logo" />
+			<img src="./static/IMAGENES/cl5.svg" alt="Mobiliaria industrial logo" />
+			<img src="./static/IMAGENES/cl6.svg" alt="Kimberly Clark logo" />
+		</div>
+
+		<div class="card-container container-fluid d-flex flex-column flex-md-row" id="nosotros">
+			<div class="d-flex flex-column flex-md-row flex-fill">
+				<div class="card border-top-0 flex-fill p-2 m-2">
+					<div class="icon mb-2">
+						<img src="./static/IMAGENES/ico1.svg" class="img-fluid" alt="Icono representativo" />
 					</div>
 					<div class="text">
-						<h2>Visión</h2>
-						<p class="lower-desc">
+						<h2 class="fs-3 fs-md-2">Visión</h2>
+						<p class="lower-desc fs-6 fs-md-5">
 							En Jhostil Perú S.A.C tenemos como visión para el 2023, ser
 							reconocidos como una de las mejores empresas en el sector de
 							transporte de carga por carretera y mantenimiento de vehículos,
@@ -95,22 +120,19 @@
 							soluciones múltiples y comprometidos con nuestros clientes.
 						</p>
 					</div>
-					<div class="btn">
+					<div class="btn image-btn">
 						<button>
-							<img
-								src="./static/IMAGENES/flecha-azul.svg"
-								alt="Botón saber más"
-							/>
+							<img src="./static/IMAGENES/flecha-azul.svg" alt="Botón saber más" />
 						</button>
 					</div>
 				</div>
-				<div class="card">
-					<div class="icon">
+				<div class="card border-top-0 flex-fill p-2 m-2">
+					<div class="icon mb-2">
 						<img src="./static/IMAGENES/ico2.svg" alt="Icono representativo" />
 					</div>
 					<div class="text">
-						<h2>Misión</h2>
-						<p class="lower-desc">
+						<h2 class="fs-3 fs-md-2">Misión</h2>
+						<p class="lower-desc fs-6 fs-md-5">
 							En Jhostil Perú S.A.C tenemos como misión brindarte servicios con
 							excelencia, seguridad y calidad garantizándote la puntualidad en
 							cada ruta a nivel nacional, el cual contamos con unidades
@@ -118,317 +140,304 @@
 							llegue en las mejores condiciones.
 						</p>
 					</div>
-					<div class="btn">
+					<div class="btn image-btn">
 						<button>
-							<img
-								src="./static/IMAGENES/flecha-azul.svg"
-								alt="Botón saber más"
-							/>
+							<img src="./static/IMAGENES/flecha-azul.svg" alt="Botón saber más" />
 						</button>
-					</div>
-				</div>
-				<div class="card">
-					<div class="icon">
-						<h2>Jhostil Peru S.A.C</h2>
-					</div>
-					<div class="text">
-						<h3>La Compañía</h3>
-						<p class="lower-desc">
-							Somos una empresa de transporte de carga por carretera y
-							mantenimiento de vehículos automotores.<br />Contamos con personal
-							especializado en el área logística, contamos con un sistema de GPS
-							para hacer un seguimiento a cada unidad durante las 24 horas en
-							tiempo real. Además se mantiene una comunicación constante y las
-							atenciones a cada cliente es de manera personalizada.
-						</p>
-					</div>
-					<div>
-						<button id="expand-btn" class="expandable-btn expanded"></button>
-						<button id="expand-btn" class="expandable-btn"></button>
-						<button id="expand-btn" class="expandable-btn"></button>
 					</div>
 				</div>
 			</div>
-			<div class="serv-container" id="servicios">
-				<div class="serv-title-container">
-					<h2>Nuestros servicios</h2>
-					<div class="serv-title-btns">
-						<button class="back-btn">
-							<img
-								src="./static/IMAGENES/Arrow - Right.svg"
-								alt="Botón atrás"
-							/>
-						</button>
-						<button class="next-btn">
-							<img
-								src="./static/IMAGENES/Arrow - Left.svg"
-								alt="Botón siguiente"
-							/>
-						</button>
-					</div>
+			<div class="card border-top-0 flex-fill p-2 m-2">
+				<div class="icon mb-2">
+					<h2 class="fs-3 fs-md-2">Jhostil Peru S.A.C</h2>
 				</div>
-				<div class="card-container">
-					<div class="serv-card">
-						<img
-							class="representative-image"
-							src="./static/IMAGENES/hombre-entrega-corriendo-rapido.jpg"
-							alt="Imagen representativa"
-						/>
-						<div class="serv-card-details-container">
-							<div class="serv-card-title">
-								Jhostil Express
-								<img src="./static/IMAGENES/stars.svg" alt="Rating" />
-							</div>
-							<div class="serv-card-price">
-								<p>S/ 0.00</p>
-								<button>
-									<img
-										src="./static/IMAGENES/discover-ico.svg"
-										alt="Icon"
-									/>Cotizar
-								</button>
-							</div>
-							<div class="serv-card-type">
-								<img src="./static/IMAGENES/medal-ico.svg" alt="Medal icon" />
-								Servicio top
-							</div>
-						</div>
-					</div>
-					<div class="serv-card">
-						<img
-							class="representative-image"
-							src="./static/IMAGENES/hombre-entrega-corriendo-rapido.jpg"
-							alt="Imagen representativa"
-						/>
-						<div class="serv-card-details-container">
-							<div class="serv-card-title">
-								Jhostil Express
-								<img src="./static/IMAGENES/stars.svg" alt="Rating" />
-							</div>
-							<div class="serv-card-price">
-								<p>S/ 0.00</p>
-								<button>
-									<img
-										src="./static/IMAGENES/discover-ico.svg"
-										alt="Icon"
-									/>Cotizar
-								</button>
-							</div>
-							<div class="serv-card-type">
-								<img src="./static/IMAGENES/medal-ico.svg" alt="Medal icon" />
-								Servicio top
-							</div>
-						</div>
-					</div>
-					<div class="serv-card">
-						<img
-							class="representative-image"
-							src="./static/IMAGENES/hombre-entrega-corriendo-rapido.jpg"
-							alt="Imagen representativa"
-						/>
-						<div class="serv-card-details-container">
-							<div class="serv-card-title">
-								Jhostil Express
-								<img
-									class="rating"
-									src="./static/IMAGENES/stars.svg"
-									alt="Rating"
-								/>
-							</div>
-							<div class="serv-card-price">
-								<p>S/ 0.00</p>
-								<button>
-									<img
-										src="./static/IMAGENES/discover-ico.svg"
-										alt="Icon"
-									/>Cotizar
-								</button>
-							</div>
-							<div class="serv-card-type">
-								<img src="./static/IMAGENES/medal-ico.svg" alt="Medal icon" />
-								Servicio top
-							</div>
-						</div>
-					</div>
+				<div class="text">
+					<h3>La Compañía</h3>
+					<p class="lower-desc fs-6 fs-md-5">
+						Somos una empresa de transporte de carga por carretera y
+						mantenimiento de vehículos automotores.<br />Contamos con personal
+						especializado en el área logística, contamos con un sistema de GPS
+						para hacer un seguimiento a cada unidad durante las 24 horas en
+						tiempo real. Además se mantiene una comunicación constante y las
+						atenciones a cada cliente es de manera personalizada.
+					</p>
+				</div>
+				<div>
+					<button id="expand-btn" class="expandable-btn expanded"></button>
+					<button id="expand-btn" class="expandable-btn"></button>
+					<button id="expand-btn" class="expandable-btn"></button>
 				</div>
 			</div>
+		</div>
 
-			<div class="work-container">
-				<div class="work-title-container">
-					<h2>Trabaja con nosotros</h2>
-					<div class="work-title-btns">
-						<button>
-							<img
-								src="./static/IMAGENES/Message.png"
-								alt="Icono mensaje"
-							/>Contactar
-						</button>
-					</div>
+		<div class="container-fluid p-5" id="servicios">
+			<div class="d-flex justify-content-between align-items-center mb-3">
+				<h2>Nuestros servicios</h2>
+				<div>
+					<button class="btn">
+						<img src="./static/IMAGENES/Arrow - Right.svg" alt="Botón atrás" />
+					</button>
+					<button class="btn special-btn">
+						<img src="./static/IMAGENES/Arrow - Left.svg" alt="Botón siguiente" />
+					</button>
 				</div>
-				<div class="content-container">
-					<div class="left-side">
-						<img
-							src="./static/IMAGENES/Rectangle 20266.png"
-							alt="Video preview"
-						/>
-						<div class="text">
-							<h2>Empieza una nueva historia</h2>
+			</div>
+			<div class="row">
+				<!-- Aquí puedes agregar las tarjetas de servicio -->
+				<div class="col-md-4">
+					<div class="card m-2">
+						<img src="./static/IMAGENES/hombre-entrega-corriendo-rapido.jpg" class="card-img-top"
+							alt="Imagen representativa" />
+						<div class="card-body d-flex flex-column gap-2">
+							<h4 class="card-title d-flex justify-content-between">
+								Jhostil Express
+								<img src="./static/IMAGENES/stars.svg" alt="Rating" />
+							</h4>
+							<div class="d-flex justify-content-between align-items-center">
+								<p style="color: var(--button-color); font-weight: 600">
+									S/ 0.00
+								</p>
+								<button class="btn special-btn">
+									<img src="./static/IMAGENES/discover-ico.svg" alt="Icon" />
+									Cotizar
+								</button>
+							</div>
 							<p>
-								Contáctanos para que puedas ser parte de nuestra empresa líder
-								en el mercado de transporte por carretera y mantenimiento de
-								vehículos
+								<img src="./static/IMAGENES/medal-ico.svg" alt="Medal icon" />
+								Servicio top
 							</p>
 						</div>
 					</div>
-					<div class="right-side">
-						<div class="long-card">
-							<img src="./static/IMAGENES/flota.png" alt="Flota imagen" />
-							<div class="text">
-								<h2>Ampliar flota de tranporte</h2>
-								<p>
-									Contamos con una amplia gama de vehículo para que puedas ser
-									parte de trabajar con ello.
+				</div>
+				<div class="col-md-4">
+					<div class="card m-2">
+						<img src="./static/IMAGENES/volvofh.jpg" class="card-img-top" alt="Imagen representativa" />
+						<div class="card-body d-flex flex-column gap-2">
+							<h4 class="card-title d-flex justify-content-between">
+								Jhostil Express
+								<img src="./static/IMAGENES/stars.svg" alt="Rating" />
+							</h4>
+							<div class="d-flex justify-content-between align-items-center">
+								<p style="color: var(--button-color); font-weight: 600">
+									S/ 0.00
 								</p>
+								<button class="btn special-btn">
+									<img src="./static/IMAGENES/discover-ico.svg" alt="Icon" />
+									Cotizar
+								</button>
+							</div>
+							<p>
+								<img src="./static/IMAGENES/medal-ico.svg" alt="Medal icon" />
+								Servicio top
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card m-2">
+						<img src="./static/IMAGENES/camion-noche.png" class="card-img-top" alt="Imagen representativa" />
+						<div class="card-body d-flex flex-column gap-2">
+							<h4 class="card-title d-flex justify-content-between">
+								Jhostil Express
+								<img src="./static/IMAGENES/stars.svg" alt="Rating" />
+							</h4>
+							<div class="d-flex justify-content-between align-items-center">
+								<p style="color: var(--button-color); font-weight: 600">
+									S/ 0.00
+								</p>
+								<button class="btn special-btn">
+									<img src="./static/IMAGENES/discover-ico.svg" alt="Icon" />
+									Cotizar
+								</button>
+							</div>
+							<p>
+								<img src="./static/IMAGENES/medal-ico.svg" alt="Medal icon" />
+								Servicio top
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid pt-5" id="trabajas">
+			<div class="here d-flex justify-content-between align-items-center mb-3">
+				<h2>Trabaja con nosotros</h2>
+				<button class="btn special-btn d-flex align-items-center">
+					<img src="./static/IMAGENES/Message.png" class="me-2" alt="Icono mensaje" />
+					<span style="color: white;">Contactar</span>
+				</button>
+
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="./static/IMAGENES/Rectangle 20266.png" class="img-fluid mb-3" alt="Video preview">
+					<h2>Empieza una nueva historia</h2>
+					<p>
+						Contáctanos para que puedas ser parte de nuestra empresa líder
+						en el mercado de transporte por carretera y mantenimiento de
+						vehículos
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<div class="card mb-3 border-0">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./static/IMAGENES/flota.png" class="img-fluid" alt="Flota imagen">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Ampliar flota de transporte</h5>
+									<p class="card-text">
+										Contamos con una amplia gama de vehículo para que puedas ser
+										parte de trabajar con ello.
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="long-card">
-							<img src="./static/IMAGENES/flota.png" alt="Flota imagen" />
-							<div class="text">
-								<h2>Ampliar flota de tranporte</h2>
-								<p>
-									Contamos con seguros que respalda tu seguridad en cada
-									tramo,mejorando la experiencia de trabajar en nuestra empresa
-								</p>
+					</div>
+					<div class="card mb-3 border-0">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img
+									src="./static/IMAGENES/mecanico-tiro-completo-revisando-camion-al-aire-libre_23-2149426544.png"
+									class="img-fluid" alt="Flota imagen">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Seguridad ante accidentes</h5>
+									<p class="card-text">
+										Contamos con seguros que respalda tu seguridad en cada
+										tramo, mejorando la experiencia de trabajar en nuestra empresa
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="long-card">
-							<img src="./static/IMAGENES/flota.png" alt="Flota imagen" />
-							<div class="text">
-								<h2>Ampliar flota de tranporte</h2>
-								<p>
-									Tus horarios serán rotativos para garantizar la importancia a
-									nuestros trabajadores , el cual son el pilar de nuestra
-									empersa
-								</p>
+					</div>
+					<div class="card mb-3 border-0">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img
+									src="./static/IMAGENES/muchos-camiones-transporte-estacionados-estacion-servicio-al-atardecer-ai-generativo.png"
+									class="img-fluid" alt="Flota imagen">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Horarios rotativos</h5>
+									<p class="card-text">
+										Tus horarios serán rotativos para garantizar la importancia a
+										nuestros trabajadores , el cual son el pilar de nuestra empresa
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<img
-				class="todo"
-				src="./static/IMAGENES/perso-empresa.png"
-				alt="Personal de la empresa"
-			/>
 		</div>
-		<div class="form-container">
-			<p class="form-title">¿Desea cotizar algún servicio?</p>
-			<form action="#">
-				<div class="inputs-container">
-					<div class="input-text">
-						<p>Partida</p>
-						<input type="text" placeholder="Escriba el recojo" />
-						<img
-							src="./static/IMAGENES/location-ico.svg"
-							alt="Icono decorativo"
-						/>
-					</div>
-					<div class="input-text">
-						<p>Destino</p>
-						<input type="text" placeholder="Escriba el destino" />
-						<img
-							src="./static/IMAGENES/location-ico.svg"
-							alt="Icono decorativo"
-						/>
-					</div>
-					<div class="input-text">
-						<p>Tipo de servicio</p>
-						<!-- dropdown -->
-						<div class="dropdown">
-							<button onclick="dropdownFunc()" class="dropbtn">
-								Seleccione el tipo de servicio
-								<i class="fa fa-caret-down"></i>
-							</button>
-							<div class="dropdown-content" id="droplist">
-								<a href="#">Servicio 1</a>
-								<a href="#">Servicio 2</a>
-							</div>
-							<img
-								src="./static/IMAGENES/Arrow - Down 2.svg"
-								alt="Flecha abajo"
-							/>
+
+		<img class="todo" src="./static/IMAGENES/perso-empresa.png" alt="Personal de la empresa" />
+
+		<div class="container p-5">
+			<h2 class="text-center text-white">¿Desea cotizar algún servicio?</h2>
+			<form>
+				<div class="row gy-3">
+					<div class="col-md-4">
+						<label for="partida" class="form-label text-white">Partida</label>
+						<div class="input-group">
+							<span class="input-group-text bg-transparent border-0">
+								<i class="bi bi-geo-alt text-white"></i>
+							</span>
+							<input type="text" class="form-control bg-transparent border-0 text-white" id="partida"
+								placeholder="Escriba el recojo" />
 						</div>
 					</div>
+					<div class="col-md-4">
+						<label for="destino" class="form-label text-white">Destino</label>
+						<div class="input-group">
+							<span class="input-group-text bg-transparent border-0">
+								<i class="bi bi-geo-alt text-white"></i>
+							</span>
+							<input type="text" class="form-control bg-transparent border-0 text-white" id="destino"
+								placeholder="Escriba el destino" />
+						</div>
+					</div>
+					<div class="col-md-4 position-relative">
+						<label for="servicio" class="form-label text-white">Tipo de servicio</label>
+						<select class="form-select bg-transparent border-0 text-white pe-5" id="servicio">
+							<option selected disabled>Seleccione el tipo de servicio</option>
+							<option value="1">Servicio 1</option>
+							<option value="2">Servicio 2</option>
+						</select>
+					</div>
 				</div>
-				<div class="text-area">
-					<p>Descripción</p>
-					<textarea
-						name="description"
-						id="description"
-						cols="30"
-						rows="10"
+				<div class="mb-3">
+					<label for="description" class="form-label text-white">Descripción</label>
+					<textarea class="form-control bg-transparent border-white text-white" id="description"
 						placeholder="Escriba una descripción y su correo para que le envie la cotización"
-					></textarea>
+						style="height: 100px"></textarea>
 				</div>
-				<button type="submit">Cotizar</button>
+				<button type="submit" class="btn d-block mx-auto ps-5 pe-5 pt-2 pb-2" style="background-color: white;">
+					Cotizar
+				</button>
 			</form>
 		</div>
-		<footer>
-			<div class="footer-container">
-				<div class="footer-sec">
-					<h3>Nuestras redes sociales</h3>
-					<p>Entregando confianza, puntualidad y eficiencia en cada viaje.</p>
-					<div class="footer-icons-container">
-						<button>
-							<img src="/static/IMAGENES/face-btn.svg" alt="Facebook link" />
-						</button>
-						<button>
-							<img src="/static/IMAGENES/insta-btn.svg" alt="Instagram link" />
-						</button>
-						<button>
-							<a
-								href="https://www.youtube.com/watch?v=__KQZs28TnU&feature=youtu.be"
-								><img src="/static/IMAGENES/yt-btn.svg" alt="Youtube link"
-							/></a>
-						</button>
-						<button>
-							<a
-								href="https://api.whatsapp.com/send?phone=51998662297&text=Deseo%20saber%20más%20sobre%20sus%20servicios"
-								style="color: white"
-								><img src="/static/IMAGENES/whats-btn.svg" alt="Whatsapp link"
-							/></a>
-						</button>
-					</div>
-				</div>
-				<div class="footer-sec">
-					<h3>Nuestras sedes</h3>
-					<ul class="ex">
-						<li>Ate Vitarte</li>
-						<li>San Borja</li>
-						<li>San Isidro</li>
-					</ul>
-				</div>
-				<div class="footer-sec">
-					<h3>Políticas y privacidad</h3>
-					<ul>
-						<li>Política de privacidad</li>
-						<li>Política de datos</li>
-						<li>Política de delivery</li>
-					</ul>
-				</div>
-				<div class="footer-sec">
-					<h3>Soporte</h3>
-					<ul>
-						<li>(0800) 542 235</li>
-						<li>Ayuda o Soporte</li>
-					</ul>
+	</div>
+	<footer class="pt-3 pb-1 px-7">
+		<div class="container text-light footer-container d-flex flex-wrap justify-content-between gap-10">
+			<div class="col-lg-3 col-sm-12">
+				<h3>Nuestras redes sociales</h3>
+				<p>Entregando confianza, puntualidad y eficiencia en cada viaje.</p>
+				<div class="d-flex justify-content-evenly align-items-center gap-0.5">
+					<button class="btn bg-transparent">
+						<img src="/static/IMAGENES/face-btn.svg" alt="Facebook link" />
+					</button>
+					<button class="btn bg-transparent">
+						<img src="/static/IMAGENES/insta-btn.svg" alt="Instagram link" />
+					</button>
+					<button class="btn bg-transparent">
+						<a href="https://www.youtube.com/watch?v=__KQZs28TnU&feature=youtu.be">
+							<img src="/static/IMAGENES/yt-btn.svg" alt="Youtube link" />
+						</a>
+					</button>
+					<button class="btn bg-transparent">
+						<a href="https://api.whatsapp.com/send?phone=51998662297&text=Deseo%20saber%20más%20sobre%20sus%20servicios"
+							style="color: white">
+							<img src="/static/IMAGENES/whats-btn.svg" alt="Whatsapp link" />
+						</a>
+					</button>
 				</div>
 			</div>
-			<div class="line"></div>
-			<div class="footer-copyright">
-				<p>© 2020 Jhostil Peru 2023 - Derechos reservados</p>
+			<div class="col-lg-3 col-sm-12">
+				<h3>Nuestras sedes</h3>
+				<ul class="list-unstyled">
+					<li>Ate Vitarte</li>
+					<li>San Borja</li>
+					<li>San Isidro</li>
+				</ul>
 			</div>
-		</footer>
-	</body>
-	<script src="./static/js/script.js"></script>
+			<div class="col-lg-3 col-sm-12">
+				<h3>Políticas y privacidad</h3>
+				<ul class="list-unstyled">
+					<li>Política de privacidad</li>
+					<li>Política de datos</li>
+					<li>Política de delivery</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-sm-12">
+				<h3>Soporte</h3>
+				<ul class="list-unstyled">
+					<li>(0800) 542 235</li>
+					<li>Ayuda o Soporte</li>
+				</ul>
+			</div>
+		</div>
+		<hr class="bg-primary my-3 mx-auto" style="width: 65%; height: 1px;">
+		<div class="text-center text-light">
+			<p class="mb-0" style="font-weight: 400; font-size: 0.8rem;">© 2020 Jhostil Peru 2023 - Derechos reservados</p>
+		</div>
+	</footer>
+
+</body>
+
 </html>
