@@ -132,7 +132,12 @@ nav ul li a.seleccionado {
 }
 
 .card {
+	height: 300px;
 	--bs-btn-box-shadow: 0px 3px 3px #46464626 !important;
+}
+
+#cardContainer {
+	width: 900px;
 }
 
 .card-container {
@@ -148,10 +153,6 @@ nav ul li a.seleccionado {
 .container-fluid {
 	width: 100%;
 	height: fit-content;
-}
-
-.card {
-	height: calc(100% / 3);
 }
 
 .card-img-top {
@@ -252,83 +253,30 @@ nav ul li a.seleccionado {
 	--bs-form-select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23fff' class='bi bi-chevron-compact-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M7.646 9.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8 8.293 5.354 6.146a.5.5 0 1 0-.708.708l3 3z'/></svg>") !important;
 	background-size: auto 25px !important;
 }
+
 /* Fin form */
 
 footer {
 	background-color: #001339 !important;
 }
-footer h3, footer p, footer li {
+
+footer h3,
+footer p,
+footer li {
 	color: white !important;
 }
+
 .footer-container {
 	background-color: transparent !important;
 }
 
-/* footer {
-	background-color: #07003b;
-	height: 100%;
-	margin-top: 3%;
-	padding-top: 3%;
-	padding-bottom: 1%;
-	padding-right: 7%;
-	padding-left: 7%;
+/* Ajusta el ancho de las tarjetas y el contenedor para vistas más pequeñas */
+@media (max-width: 760px) {
+	.card {
+		width: 300px;
+	}
 
-	.footer-container {
-		display: flex;
+	#cardContainer {
 		width: 100%;
-		height: fit-content;
-		justify-content: space-between;
-		gap: 10%;
-
-		.footer-sec {
-			width: calc(100% / 4);
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-
-			.footer-icons-container {
-				display: flex;
-				width: 100%;
-				height: fit-content;
-				justify-content: space-evenly;
-				align-items: center;
-				gap: 0.5rem;
-			}
-		}
-	}
-
-	.line {
-		width: 65%;
-		height: 1px;
-		background-color: #6278ff;
-		margin-top: 3rem;
-		margin-bottom: 3rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.footer-copyright {
-		width: 100%;
-		height: fit-content;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.footer-copyright p {
-		font-weight: 400;
-		font-size: 0.8rem;
-		color: white;
 	}
 }
-
-.footer-sec h3,
-.footer-sec p,
-.footer-sec li {
-	color: white;
-	margin-bottom: 1rem;
-}
-
-.footer-sec ul {
-	list-style: none;
-} */
